@@ -11,7 +11,7 @@ const CORS_HEADERS = {
 export async function POST(req) {
     try {
         const token = process.env.TELEGRAM_BOT_TOKEN;
-        const chatId = Number(process.env.TELEGRAM_CHAT_ID);
+        const chatId = process.env.TELEGRAM_CHAT_ID;
         const threadId = process.env.TELEGRAM_THREAD_ID;
         const { text } = await req.json()
 
