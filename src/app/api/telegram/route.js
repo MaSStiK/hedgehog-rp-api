@@ -1,4 +1,3 @@
-// app/api/telegram/route.js
 import TelegramBot from "node-telegram-bot-api";
 
 const CORS_HEADERS = {
